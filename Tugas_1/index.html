@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="box" id="form">
+        <h2>💬 BERIKAN FEEDBACK</h2>
+        <p>Apa pendapatmu?</p>
+        <input type="text" id="namaInput" placeholder="Anonim Kamu">
+        <textarea rows="4" cols="30" id="pesanInput" placeholder="Tulis feedback di sini"></textarea>
+        <button class="butForm" onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+
+    <div class="box" id="thanks">
+        <h2>❤️ Terima kasih!</h2>
+        <p>Feedback kamu sudah diterima.</p>
+
+        <div class="hasil-feedback">
+            <p>
+                <strong>Nama:</strong>
+                <span id="tampilNama"></span>
+            </p>
+            <p>
+                <strong>Pesan:</strong>
+                <span id="tampilPesan"></span>
+            </p>
+        </div>
+
+        <footer>
+            <p>David Dwi Wahyudi</p>
+            <p>252410103005</p>
+        </footer>
+
+        <button class="butThanks" onclick="kembali()">
+            Kembali
+        </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenless Zone Zero - Clone Layout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Overlay Efek Garis CRT Scanline -->
+  <div class="scanline-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================ -->
+  <!-- 1. NAVIGATION BAR ATAS                       -->
+  <!-- ============================================ -->
+  <header class="zzz-nav">
+    <div class="zzz-nav__left">
+      <!-- 🖼️ ASSET PLACEHOLDER: LOGO BRAND / GAME (Top Left) -->
+      <a href="#" class="zzz-logo asset-box" title="Ganti dengan Logo ZZZ / Studio Kamu">
+        <span class="asset-tag">[LOGO]</span>
+        <div class="logo-text">
+          <span class="brand-title">EZ STUDIO</span>
+          <span class="game-title">Z·Z·Z</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Quick Action Icons Kanan Atas -->
+    <div class="zzz-nav__right">
+      <button class="nav-icon-btn" title="Toggle Sound">🔊</button>
+      <button class="nav-icon-btn" title="Music Player">🎵</button>
+      <button class="nav-icon-btn" title="Share">↗</button>
+      <button class="nav-icon-btn" title="Shop">🛒</button>
+      <button class="nav-icon-btn" title="Language">🌐</button>
+      <button class="nav-icon-btn" title="Home">🏠</button>
+    </div>
+  </header>
+
+
+  <!-- ============================================ -->
+  <!-- 2. HERO SECTION MAIN (Sesuai Referensi Gambar) -->
+  <!-- ============================================ -->
+  <section id="hero" class="zzz-hero">
+
+    <!-- 🖼️ ASSET PLACEHOLDER: BACKGROUND / KEY ART KARAKTER UTAMA -->
+    <div class="zzz-hero__bg asset-box">
+      <span class="asset-tag">[BACKGROUND IMAGE / KEY ART UTAMA]</span>
+      <!-- GANTI IMG DI BAWAH INI DENGAN GAMBAR KARAKTERMU -->
+      <!-- <img src="assets/img/hero-character.png" alt="ZZZ Key Art"> -->
+    </div>
+
+    <!-- Indikator Navigasi Vertikal (Kanan Layar) -->
+    <div class="zzz-sidenav">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Konten Overlay Hero -->
+    <div class="zzz-hero__content">
+
+      <!-- ================= KIRI BAWAH ================= -->
+      <div class="hero-bottom-left">
+        <!-- 🖼️ ASSET PLACEHOLDER: ESRB RATING BOX -->
+        <div class="esrb-box asset-box">
+          <span class="asset-tag">[ESRB / RATING BADGE]</span>
+          <div class="esrb-rating">T</div>
+          <div class="esrb-desc">
+            <strong>TEEN</strong><br>
+            Violence, Suggestive Themes
+          </div>
+        </div>
+
+        <!-- Available Platforms -->
+        <div class="available-platforms">
+          <p class="plat-text">Download via HoYoPlay (PC)</p>
+          <div class="plat-title">AVAILABLE ON</div>
+          <!-- 🖼️ ASSET PLACEHOLDER: IKON PLATFORM SMALL -->
+          <div class="plat-icons asset-box">
+            <span class="asset-tag">[IKON PLATFORM PC/CONSOLE/MOBILE]</span>
+          </div>
+        </div>
+
+        <p class="promo-text">Join the Version 3.2 Check-In and Earn 20 Pulls Immediately!</p>
+      </div>
+
+      <!-- ================= TENGAH (TITLE & DOWNLOAD) ================= -->
+      <div class="hero-center">
+        <!-- 🖼️ ASSET PLACEHOLDER: JUDUL TEMA / LOGO VERSION -->
+        <div class="version-title asset-box">
+          <span class="asset-tag">[TITLE LOGO: Their Secret Histories]</span>
+          <h1 class="title-text">Their Secret Histories</h1>
+        </div>
+
+        <!-- Subtitle Runes / Teks Dekoratif -->
+        <div class="sub-runes">▲ ∷∷∷ ▲ ∷∷∷ ▲ ∷∷∷ ▲</div>
+
+        <!-- Tombol Play Trailer Video -->
+        <button class="play-trailer-btn" id="openTrailerBtn" title="Watch Trailer">
+          <span class="play-icon">▶</span>
+        </button>
+
+        <!-- Tombol Download Utama -->
+        <div class="download-container">
+          <div class="click-badge">-CLICK!-</div>
+          <a href="#" class="btn-download">
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ================= KANAN BAWAH ================= -->
+      <div class="hero-bottom-right">
+        <!-- 🖼️ ASSET PLACEHOLDER: GRID STORE BADGES -->
+        <div class="store-grid asset-box">
+          <span class="asset-tag">[GRID LOGO STORE: PS5, Xbox, AppStore, Steam, dll]</span>
+          <div class="store-item">PS5</div>
+          <div class="store-item">Xbox Series X|S</div>
+          <div class="store-item">App Store</div>
+          <div class="store-item">Google Play</div>
+          <div class="store-item">HoYoPlay</div>
+          <div class="store-item">Epic Store</div>
+          <div class="store-item">Steam</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Panah Scroll ke Bawah -->
+    <a href="#news" class="scroll-down-btn">
+      <span class="arrow">∨</span>
+    </a>
+  </section>
+
+
+  <!-- ============================================ -->
+  <!-- 3. SECTION BERITA / CARDS (KOTAK UNTUK ASSET)-->
+  <!-- ============================================ -->
+  <section id="news" class="zzz-section">
+    <h2 class="section-title">LATEST DISPATCH // <span>NEWS &amp; EVENTS</span></h2>
+
+    <div class="news-grid">
+      <!-- Card Item 1 -->
+      <div class="news-card">
+        <!-- 🖼️ ASSET PLACEHOLDER: THUMBNAIL BERITA 1 -->
+        <div class="news-card__thumb asset-box">
+          <span class="asset-tag">[THUMBNAIL BANNER 1]</span>
+        </div>
+        <div class="news-card__body">
+          <span class="news-tag">INFO</span>
+          <h3>Version 3.2 Update Details &amp; Event Overview</h3>
+          <p class="news-date">2026-09-23</p>
+        </div>
+      </div>
+
+      <!-- Card Item 2 -->
+      <div class="news-card">
+        <!-- 🖼️ ASSET PLACEHOLDER: THUMBNAIL BERITA 2 -->
+        <div class="news-card__thumb asset-box">
+          <span class="asset-tag">[THUMBNAIL BANNER 2]</span>
+        </div>
+        <div class="news-card__body">
+          <span class="news-tag">EVENT</span>
+          <h3>Exclusive Agent Recruitment Banner - Boosted Drop Rate</h3>
+          <p class="news-date">2026-09-20</p>
+        </div>
+      </div>
+
+      <!-- Card Item 3 -->
+      <div class="news-card">
+        <!-- 🖼️ ASSET PLACEHOLDER: THUMBNAIL BERITA 3 -->
+        <div class="news-card__thumb asset-box">
+          <span class="asset-tag">[THUMBNAIL BANNER 3]</span>
+        </div>
+        <div class="news-card__body">
+          <span class="news-tag">NOTICES</span>
+          <h3>Server Maintenance Schedule &amp; Compensation Notice</h3>
+          <p class="news-date">2026-09-18</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="zzz-footer">
+    <p>© 2026 HOYOVERSE / ZZZ CLONE PROJECT. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

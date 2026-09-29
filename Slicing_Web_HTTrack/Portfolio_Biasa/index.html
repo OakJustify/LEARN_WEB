@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>David Dwi Wahyudi — Mahasiswa Informatika</title>
+<meta name="description" content="Halaman David Dwi Wahyudi: siapa saya, proyek yang sedang dibuat, catatan pengembangan harian, dan pencapaian sejauh ini.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#saya">Lewati ke isi</a>
+
+<header class="topbar">
+  <a class="mark" href="#atas">david dwi wahyudi</a>
+
+  <nav class="nav" aria-label="Bagian halaman">
+    <a href="#saya">Saya</a>
+    <a href="#proyek">Proyek</a>
+    <a href="#log">Dev log</a>
+    <a href="#pencapaian">Pencapaian</a>
+  </nav>
+
+  <button class="hold" id="holdTheme" aria-label="Tahan untuk ganti tema terang atau gelap">
+    <span class="hold__fill" aria-hidden="true"></span>
+    <span class="hold__label" id="holdLabel">Tahan untuk ganti tema</span>
+  </button>
+</header>
+
+<main id="atas">
+
+  <!-- ========== 1. NAMA & BIO ========== -->
+  <section class="hero" id="saya">
+    <div class="hero__main">
+      <p class="hero__role">Mahasiswa Informatika, Fakultas Ilmu Komputer</p>
+
+      <h1 class="hero__name">david<br>dwi<br>wahyudi</h1>
+
+      <p class="hero__bio">
+        Saya menulis kode, lalu menulis tentang kodenya. Semua yang ada di halaman ini
+        dikerjakan sendiri dengan HTML, CSS, dan JavaScript murni — termasuk halaman yang
+        sedang Anda baca. Tidak semuanya rapi, tapi semua barisnya saya pahami.
+      </p>
+
+      <ul class="hero__links">
+        <li><a href="https://github.com/OakJustify" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="mailto:david@example.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> david@example.com</a></li>
+      </ul>
+    </div>
+
+    <aside class="hero__side">
+      <div class="panel">
+        <h2 class="panel__title"><span class="live" aria-hidden="true"></span> Sedang berjalan</h2>
+        <dl class="facts">
+          <dt>Fokus</dt>
+          <dd>Memperdalam tech stack frontend dan dasar ilmu komputer.</dd>
+          <dt>Sedang dibaca</dt>
+          <dd><i>Artificial Intelligence: A Modern Approach</i>, edisi keempat — Russell &amp; Norvig.</dd>
+          <dt>Basis</dt>
+          <dd>Jember, Jawa Timur. Terbuka untuk kolaborasi proyek web.</dd>
+        </dl>
+      </div>
+
+      <div class="panel panel--tools">
+        <h2 class="panel__title">Alat sehari-hari</h2>
+        <ul class="tools">
+          <li>HTML semantik</li>
+          <li>CSS Grid</li>
+          <li>Flexbox</li>
+          <li>JavaScript ES6+</li>
+          <li>Tailwind</li>
+          <li>Git &amp; GitHub</li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ========== STRIP KABAR ========== -->
+  <div class="ticker" id="ticker" aria-label="Kabar terbaru">
+    <div class="ticker__rail" id="tickerRail"></div>
+  </div>
+
+  <!-- ========== 2. PROYEK ========== -->
+  <section class="sect" id="proyek">
+    <div class="sect__head">
+      <h2 class="sect__title">Sedang dibuat</h2>
+      <p class="sect__note">Tiga proyek yang sedang berjalan sekarang. Angka di bawah tiap kartu adalah perkiraan seberapa jauh proyeknya menuju versi pertama yang layak dipakai.</p>
+    </div>
+    <div class="grid" id="gridProyek"><!-- diisi script.js --></div>
+  </section>
+
+  <!-- ========== 3. DEV LOG ========== -->
+  <section class="sect" id="log">
+    <div class="sect__head">
+      <h2 class="sect__title">Dev log</h2>
+      <p class="sect__note">Catatan ditulis di akhir sesi ngoding, bukan di akhir pekan — ingatan soal kenapa sesuatu gagal habis masa berlakunya dalam hitungan jam.</p>
+    </div>
+
+    <ol class="log" id="logList"><!-- diisi script.js --></ol>
+
+    <button class="more" id="logMore">Tampilkan catatan lama</button>
+  </section>
+
+  <!-- ========== 4. PENCAPAIAN ========== -->
+  <section class="sect" id="pencapaian">
+    <div class="sect__head">
+      <h2 class="sect__title">Pencapaian</h2>
+      <p class="sect__note">Bukan sertifikat, melainkan hal yang akhirnya benar-benar bisa saya kerjakan sendiri.</p>
+    </div>
+
+    <div class="tally">
+      <div><b>4</b><span>proyek berjalan</span></div>
+      <div><b>30+</b><span>catatan dev log</span></div>
+      <div><b>2</b><span>tahun menulis kode</span></div>
+    </div>
+
+    <ul class="wins" id="winsList"><!-- diisi script.js --></ul>
+
+    <div class="next">
+      <h3>Yang sedang dikejar</h3>
+      <ul id="nextList"><!-- diisi script.js --></ul>
+    </div>
+  </section>
+
+  <!-- ========== PENUTUP ========== -->
+  <section class="sect closing">
+    <p class="closing__line">Ada yang ingin dikerjakan bersama, atau ingin menunjuk bagian kode yang keliru?</p>
+    <a class="btn" href="mailto:david@example.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Kirim email</a>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Ditulis sendiri dengan HTML, CSS, dan JavaScript murni.</p>
+  <p><span id="year">2026</span> — David Dwi Wahyudi, Jember.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

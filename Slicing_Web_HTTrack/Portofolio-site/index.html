@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JANE DOE — Interface Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scan-overlay" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#top" class="nav__mark">A<span class="dot">/</span>R</a>
+  <nav class="nav__links">
+    <a href="#work">WORK</a>
+    <a href="#about">PROFILE</a>
+    <a href="#skills">SKILLSET</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <div class="nav__status"><span class="pulse"></span>AVAILABLE FOR HIRE</div>
+</header>
+
+<!-- HERO SECTION WITH JANE DOE CARD -->
+<section id="top" class="hero">
+  <div class="hero__stripes" aria-hidden="true"></div>
+  <p class="hero__eyebrow">FILE // 001 — PORTFOLIO_ARCHIVE</p>
+
+  <div class="hero__grid">
+    <!-- Kolom Kiri: Teks & Action -->
+    <div class="hero__text">
+      <h1 class="hero__title" data-text="JANE DOE">JANE DOE</h1>
+      <p class="hero__role">Product &amp; Interface Designer building sharp, motion-driven digital experiences.</p>
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--fill">VIEW ARCHIVE</a>
+        <a href="#contact" class="btn btn--line">SEND TRANSMISSION</a>
+      </div>
+    </div>
+
+    <!-- Kolom Kanan: Card Karakter Jane Doe (Transparent PNG) -->
+    <div class="hero__char-card">
+      <div class="char-card__frame">
+        <span class="char-card__tag">[IMAGE: JANE DOE TRANSPARENT PNG]</span>
+        <!-- 🖼️ ASSET PLACEHOLDER: Masukkan file PNG transparan kamu di src di bawah ini -->
+        <img src="assets/img/jane-doe-transparent.png" alt="Jane Doe Character" class="char-card__img" onerror="this.style.opacity='0'">
+      </div>
+      <div class="char-card__badge">SPECIAL AGENT // PHYSICAL</div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">SCROLL<span class="hero__scroll-bar"></span></div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>UI / UX DESIGN ◆ FRONT-END BUILD ◆ MOTION SYSTEMS ◆ BRAND IDENTITY ◆ DESIGN OPS ◆ UI / UX DESIGN ◆ FRONT-END BUILD ◆ MOTION SYSTEMS ◆ BRAND IDENTITY ◆ DESIGN OPS ◆ </span>
+  </div>
+</div>
+
+<!-- WORK -->
+<section id="work" class="work">
+  <h2 class="section-heading"><span class="tag">02</span>SELECTED WORK</h2>
+
+  <div class="case" data-case="1">
+    <div class="case__panel">
+      <span class="case__index">C.01</span>
+      <div class="case__frame">
+        <img src="assets/img/project-placeholder-1.svg" alt="Preview of Nightline Transit App project">
+      </div>
+    </div>
+    <div class="case__info">
+      <h3>NIGHTLINE — TRANSIT APP</h3>
+      <p>A real-time transit companion for night-shift commuters, redesigned around low-light legibility and one-thumb navigation.</p>
+      <ul class="case__meta">
+        <li>MOBILE APP</li><li>DESIGN SYSTEM</li><li>2026</li>
+      </ul>
+      <a href="#" class="link-arrow">OPEN CASE STUDY</a>
+    </div>
+  </div>
+
+  <div class="case case--flip" data-case="2">
+    <div class="case__panel">
+      <span class="case__index">C.02</span>
+      <div class="case__frame">
+        <img src="assets/img/project-placeholder-2.svg" alt="Preview of Circuit Dashboard project">
+      </div>
+    </div>
+    <div class="case__info">
+      <h3>CIRCUIT — OPS DASHBOARD</h3>
+      <p>A monitoring dashboard for hardware fleets, turning dense telemetry into fast, at-a-glance status reads.</p>
+      <ul class="case__meta">
+        <li>WEB APP</li><li>DATA VIZ</li><li>2025</li>
+      </ul>
+      <a href="#" class="link-arrow">OPEN CASE STUDY</a>
+    </div>
+  </div>
+
+  <div class="case" data-case="3">
+    <div class="case__panel">
+      <span class="case__index">C.03</span>
+      <div class="case__frame">
+        <img src="assets/img/project-placeholder-3.svg" alt="Preview of Halo Storefront project">
+      </div>
+    </div>
+    <div class="case__info">
+      <h3>HALO — STOREFRONT REBRAND</h3>
+      <p>A full visual identity and storefront rebuild for an independent audio-gear label, built for speed and shelf presence.</p>
+      <ul class="case__meta">
+        <li>BRANDING</li><li>E-COMMERCE</li><li>2025</li>
+      </ul>
+      <a href="#" class="link-arrow">OPEN CASE STUDY</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about__id">
+    <span class="about__id-label">PROFILE</span>
+    <span class="about__id-num">ID_7749-A</span>
+  </div>
+  <h2 class="about__statement">
+    I design interfaces the way a good stage crew runs a show — invisible when it works, unforgettable when it needs to be.
+  </h2>
+  <div class="about__row">
+    <p>Six years designing for products across mobility, fintech, and consumer hardware. I care about the frame most people skip: the states in between — loading, error, empty, transition — because that's where trust is actually built.</p>
+    <div class="about__stats">
+      <div><strong>6</strong><span>YEARS IN PRACTICE</span></div>
+      <div><strong>27</strong><span>SHIPPED PRODUCTS</span></div>
+      <div><strong>4</strong><span>INDUSTRIES</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2 class="section-heading"><span class="tag">03</span>SKILLSET</h2>
+  <div class="skills__grid">
+    <div class="skill-card">
+      <span class="skill-card__num">01</span>
+      <h3>Interface Design</h3>
+      <p>Figma, design systems, component architecture, accessibility auditing.</p>
+    </div>
+    <div class="skill-card">
+      <span class="skill-card__num">02</span>
+      <h3>Motion &amp; Prototyping</h3>
+      <p>Interaction choreography, micro-motion, high-fidelity prototyping.</p>
+    </div>
+    <div class="skill-card">
+      <span class="skill-card__num">03</span>
+      <h3>Front-End Build</h3>
+      <p>HTML, CSS, JavaScript — production-ready hand-off and light implementation.</p>
+    </div>
+    <div class="skill-card">
+      <span class="skill-card__num">04</span>
+      <h3>Brand Systems</h3>
+      <p>Identity design, typography systems, voice and tone guidelines.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <p class="contact__eyebrow">04 — OPEN CHANNEL</p>
+  <h2 class="contact__title">LET'S BUILD<br>SOMETHING SHARP.</h2>
+  <a href="mailto:hello@example.com" class="contact__email">hello@example.com</a>
+  <div class="contact__socials">
+    <a href="#">DRIBBBLE</a>
+    <a href="#">LINKEDIN</a>
+    <a href="#">GITHUB</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>© 2026 JANE DOE</span>
+  <span>BUILT WITH HTML / CSS / JS</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

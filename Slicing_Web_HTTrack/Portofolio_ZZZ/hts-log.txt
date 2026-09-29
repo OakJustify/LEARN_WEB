@@ -1,0 +1,15 @@
+HTTrack3.50-3 launched on Wed, 23 Sep 2026 09:48:24 at https://zenless.hoyoverse.com/en-us/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(webhttrack -q -%i -w https://zenless.hoyoverse.com/en-us/ -O "/home/podistrict/Projects/Web/Portofolio_ZZZ" -%P -N0 -s2 -p3 -D -a -K0 -c4 -%k -A100000 -F "Mozilla/5.0 (compatible; HTTrack/3.x; +https://www.httrack.com/)" -%F "<!-- Mirrored from {url} by HTTrack Website Copier/3.x [XR&CO], {date} -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -u1 -%s -%u -f2 -%I0 -%f )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:48:31	Error: 	"Not Found" (404) at link https://zenless.hoyoverse.com/en-us/options.spineList[0].manifest.img[1].src (from https://act.hoyoverse.com/puzzle/zzz/pz_YXivb7tRbA/config.3ef65fad.js)
+09:48:31	Error: 	"Not Found" (404) at link https://zenless.hoyoverse.com/en-us/options.spineList[1].manifest.img[0].src (from https://act.hoyoverse.com/puzzle/zzz/pz_YXivb7tRbA/config.3ef65fad.js)
+09:48:31	Error: 	"Not Found" (404) at link https://zenless.hoyoverse.com/en-us/options.spineList[1].manifest.img[1].src (from https://act.hoyoverse.com/puzzle/zzz/pz_YXivb7tRbA/config.3ef65fad.js)
+09:48:31	Error: 	"Not Found" (404) at link https://zenless.hoyoverse.com/en-us/plat_cn/m10201340231541/m10201340231541-zh-cn.json (from https://act.hoyoverse.com/puzzle/zzz/pz_YXivb7tRbA/setups.682a2a46.js)
+
+HTTrack Website Copier/3.50-3 mirror complete in 7 seconds : 18 links scanned, 13 files written (4371356 bytes overall) [1269732 bytes received at 181390 bytes/sec], 3938210 bytes transferred using HTTP compression in 12 files, ratio 20%, 2.5 requests per connection
+(4 errors, 0 warnings, 0 messages)

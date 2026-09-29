@@ -24,7 +24,7 @@ I started learning web development to understand how modern websites work under 
 ### 🎬 Zenless Zone Zero - Fan-Made Landing Page
 A responsive, modular Single Page Application (SPA) fan page built using pure HTML, CSS, and Vanilla JavaScript.
 - **Key Features**: Dynamic SPA content fetching, background video optimization for mobile & desktop, trailer modal dialog, custom audio controls, and toast notifications.
-- **Live Demo**: jane-doe-zzz-web.vercel.app
+- **Live Demo**: https://jane-doe-zzz-web.vercel.app
 - **Source Code**: https://github.com/OakJustify/Jane-Doe-ZZZ_Web.git
 - **Key Takeaways**: Learned SPA mechanics (`fetch()`), CSS variable management, modular file separation (`html/`, `css/`, `js/`), and media resource optimization.
 

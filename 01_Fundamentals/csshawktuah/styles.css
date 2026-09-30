@@ -1,0 +1,4 @@
+abbr[title] {
+  text-decoration: underline dotted #e62234; /* Garis bawah titik-titik merah */
+  cursor: help;                               /* Mengubah bentuk kursor jadi tanda tanya */
+}

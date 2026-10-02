@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tailwind via NPM</title>
+    <!-- Arahkan ke file hasil build -->
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-primary text-white p-10 font-body">
+    <h1 class="text-4xl font-bold">Instalasi NPM Berhasil</h1>
+
+    <!-- Sebuah kotak (card) dengan jarak margin luar, padding dalam, dan lebar spesifik -->
+    <div class="m-8 p-6 w-72 h-auto bg-black border border-gray-200">
+        Konten di dalam card ini memiliki jarak 1.5rem (24px) dari tepi border (karena p-6).
+        Sedangkan card ini sendiri didorong sejauh 2rem (32px) dari elemen di sekitarnya (karena m-8).
+    </div>
+
+    <div class="bg-slate-900 p-4">
+        <!-- Judul besar, tebal, dan berwarna putih -->
+        <h1 class="text-2xl font-bold text-white">Sistem Manajemen</h1>
+    
+        <!-- Teks paragraf lebih kecil, warna abu-abu agar tidak terlalu kontras -->
+        <p class="text-sm font-normal text-slate-400 mt-1">
+            Masuk ke dashboard untuk mengelola data anggota dan transaksi.
+        </p>
+    </div>
+
+    <nav class="flex justify-between items-center p-4 bg-white shadow">
+        <div class="font-bold text-lg">LogoApp</div>
+        <ul class="flex gap-4">
+            <li>Beranda</li>
+            <li>Profil</li>
+        </ul>
+    </nav>
+
+    <div class="grid grid-cols-2 gap-4 p-4">
+        <div class="bg-blue-100 p-4">Item 1</div>
+        <div class="bg-green-100 p-4">Item 2</div>
+        <div class="bg-yellow-100 p-4">Item 3</div>
+        <div class="bg-red-100 p-4">Item 4</div>
+    </div>
+<!-- Hasilnya adalah kotak 2 baris x 2 kolom dengan jarak antar kotak seragam -->
+</body>
+</html>

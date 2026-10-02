@@ -1,0 +1,8 @@
+/* src/input.css */
+@import "tailwindcss";
+
+/* Kustomisasi tema langsung diletakkan di dalam file CSS */
+@theme {
+  --color-primary: #1d4ed8;
+  --font-body: "Inter", sans-serif;
+}

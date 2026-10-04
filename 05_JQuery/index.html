@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kamus dan panduan lengkap tag-tag HTML5 beserta fungsinya.">
+  <meta name="theme-color" content="#0b0d12">
+  <title>Panduan & Referensi Tag HTML5 Lengkap</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 20px; }
+    code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+  </style>
+
+  <!-- CDN jQuery versi 3.7.1 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Referensi Lengkap Elemen & Tag HTML5</h1>
+    <nav>
+      <ul>
+        <li><a href="#teks">Teks & Tipografi</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#formulir">Formulir</a></li>
+        <li><a href="#tabel">Tabel</a></li>
+        <li><a href="#interaktif">Interaktif</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <section id="teks">
+      <h2>1. Teks & Formatting Tipografi</h2>
+
+      <article>
+        <h3>Pengformatan Kata & Paragraf</h3>
+
+        <p>
+          Ini adalah paragraf biasa. Di dalamnya kita bisa menambahkan kata dengan 
+          <strong>teks tebal (strong)</strong>, 
+          <em>teks miring (em)</em>, 
+          <mark>teks tersorot (mark)</mark>, dan 
+          <small>teks kecil (small)</small>.
+        </p>
+
+        <p>
+          Harga lama: <del>Rp 100.000</del> 
+          <ins>Rp 75.000</ins>
+        </p>
+
+        <p>
+          Formula kimia: H<sub>2</sub>O. 
+          Persamaan matematika: X<sup>2</sup> + Y<sup>2</sup>.
+        </p>
+
+        <p>
+          Singkatan: <abbr title="HyperText Markup Language">HTML</abbr>
+        </p>
+
+        <p>
+          Dipublikasikan pada: <time datetime="2026-10-04">4 Oktober 2026</time>
+        </p>
+      </article>
+
+      <article>
+        <h3>Kode, Kutipan, & Elemen Spesifik</h3>
+
+        <blockquote cite="https://developer.mozilla.org">
+          <p>"HTML adalah bahasa pemformatan standar untuk dokumen yang dirancang agar ditampilkan di peramban web."</p>
+          <cite>— MDN Web Docs</cite>
+        </blockquote>
+
+        <p>
+          Semboyan kita adalah <q>Belajar Setiap Hari</q>.
+        </p>
+
+        <p>
+          Gunakan perintah <code>console.log()</code> untuk debugging.
+        </p>
+
+        <pre><code>
+function sapa() {
+  console.log("Halo Dunia!");
+}
+        </code></pre>
+
+        <p>
+          Tekan tombol <kbd>Ctrl</kbd> + <kbd>C</kbd> untuk menyalin.
+        </p>
+
+        <p>
+          Output komputer: <samp>File tidak ditemukan.</samp>
+        </p>
+
+        <p>
+          Variabel <var>x</var> bernilai sama dengan <var>y</var> + 2.
+        </p>
+
+        <address>
+          Dibuat oleh: <a href="mailto:admin@example.com">Tim Dev</a><br>
+          Kota Jember, Jawa Timur.
+        </address>
+      </article>
+
+      <article>
+        <h3>Daftar Deskripsi (Description List)</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Bahasa pemformatan struktur halaman web.</dd>
+
+          <dt>CSS</dt>
+          <dd>Bahasa pemrograman untuk mengatur tampilan dan tata letak web.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <aside>
+      <h4>Info Tambahan (Sidebar)</h4>
+      <p>Ini diletakkan di dalam tag <code>&lt;aside&gt;</code> untuk memberikan informasi pendukung.</p>
+    </aside>
+
+    <hr>
+
+    <section id="media">
+      <h2>2. Media & Elemen Sematan</h2>
+
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Contoh gambar demonstrasi" width="400" height="200" loading="lazy">
+        <figcaption>Gambar 1: Contoh implementasi tag figure dan figcaption.</figcaption>
+      </figure>
+
+      <picture>
+        <source media="(min-width: 800px)" srcset="https://via.placeholder.com/800x200">
+        <img src="https://via.placeholder.com/400x200" alt="Gambar responsif">
+      </picture>
+
+      <h4>Video & Audio</h4>
+      <video controls width="320" poster="https://via.placeholder.com/320x180" preload="metadata">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <track kind="subtitles" src="subtitles_id.vtt" srclang="id" label="Indonesia">
+        Browser Anda tidak mendukung pemutar video HTML5.
+      </video>
+
+      <audio controls preload="none">
+        <source src="musik.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+      </audio>
+
+      <h4>Sematkan Halaman Eksternal</h4>
+      <iframe src="https://example.com" title="Contoh Frame Eksternal" width="300" height="150" loading="lazy"></iframe>
+
+      <svg width="50" height="50">
+        <circle cx="25" cy="25" r="20" fill="#007bff" />
+      </svg>
+
+      <canvas id="myCanvas" width="100" height="50" style="border:1px solid #ccc;"></canvas>
+    </section>
+
+    <hr>
+
+    <section id="tabel">
+      <h2>3. Struktur Tabel Data</h2>
+
+      <table border="1" style="border-collapse: collapse; width: 100%;">
+        <caption>Daftar Nilai Mahasiswa</caption>
+
+        <colgroup>
+          <col style="background-color: #f9f9f9;">
+          <col span="2">
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Mata Kuliah</th>
+            <th>Nilai</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Rian</td>
+            <td>Pemrograman Web</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Siti</td>
+            <td>Pemrograman Web</td>
+            <td>A-</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">Total Siswa Passed</td>
+            <td>2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="formulir">
+      <h2>4. Formulir & Elemen Input</h2>
+
+      <form action="/submit-endpoint" method="POST">
+
+        <fieldset>
+          <legend>Informasi Akun</legend>
+
+          <div>
+            <label for="username">Nama Pengguna:</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan username" required autocomplete="username">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com">
+          </div>
+
+          <div>
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" name="password">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Input Variasi Tipe HTML5</legend>
+
+          <div>
+            <label for="angka">Angka (Number):</label>
+            <input type="number" id="angka" name="angka" min="1" max="100" value="10">
+          </div>
+
+          <div>
+            <label for="rentang">Rentang (Range/Slider):</label>
+            <input type="range" id="rentang" name="rentang" min="0" max="100">
+          </div>
+
+          <div>
+            <label for="tanggal">Tanggal (Date):</label>
+            <input type="date" id="tanggal" name="tanggal">
+          </div>
+
+          <div>
+            <label for="warna">Pilih Warna (Color):</label>
+            <input type="color" id="warna" name="warna" value="#007bff">
+          </div>
+
+          <div>
+            <label for="berkas">Unggah File (File):</label>
+            <input type="file" id="berkas" name="berkas" accept="image/*">
+          </div>
+
+          <div>
+            <p>Jenis Kelamin:</p>
+            <input type="radio" id="pria" name="jk" value="pria">
+            <label for="pria">Laki-Laki</label>
+
+            <input type="radio" id="wanita" name="jk" value="wanita">
+            <label for="wanita">Perempuan</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="setuju" name="setuju" checked>
+            <label for="setuju">Saya menyetujui syarat & ketentuan</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pilihan & Input Teks Panjang</legend>
+
+          <div>
+            <label for="kota">Pilih Kota (Select Dropdown):</label>
+            <select id="kota" name="kota">
+              <optgroup label="Jawa Timur">
+                <option value="jember">Jember</option>
+                <option value="surabaya" selected>Surabaya</option>
+              </optgroup>
+              <optgroup label="Jawa Barat">
+                <option value="bandung">Bandung</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div>
+            <label for="browser">Pilih Browser (AutoComplete via Datalist):</label>
+            <input list="browsers" id="browser" name="browser" placeholder="Ketik browser...">
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Safari">
+              <option value="Edge">
+            </datalist>
+          </div>
+
+          <div>
+            <label for="pesan">Pesan/Komentar:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Ketik pesan Anda..."></textarea>
+          </div>
+
+          <div>
+            <label for="progres">Progres Penyelesaian:</label>
+            <progress id="progres" value="70" max="100">70%</progress>
+          </div>
+
+          <div>
+            <label for="meteran">Pengukur Kapasitas (Meter):</label>
+            <meter id="meteran" value="0.6" min="0" max="1.0">60%</meter>
+          </div>
+        </fieldset>
+
+        <br>
+        <button type="submit">Kirim Data</button>
+        <button type="reset">Riset Form</button>
+        <button type="button" onclick="alert('Tombol kustom!')">Tombol Biasa</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="interaktif">
+      <h2>5. Elemen Interaktif Modern</h2>
+
+      <details>
+        <summary>Klik di sini untuk melihat FAQ / Rahasia</summary>
+        <p>Ini adalah konten tersembunyi yang muncul saat elemen dibuka.</p>
+      </details>
+
+      <br>
+
+      <dialog id="myDialog">
+        <p>Ini adalah jendela dialog modal bawaan HTML!</p>
+        <button id="closeModal">Tutup Dialog</button>
+      </dialog>
+
+      <button id="openModal">Buka Pop-up Dialog</button>
+
+      <template id="card-template">
+        <div class="card">
+          <h4>Judul Kartu</h4>
+          <p>Deskripsi dinamis dari skrip JavaScript.</p>
+        </div>
+      </template>
+
+      <noscript>
+        <p style="color: red;">Peringatan: Situs ini membutuhkan JavaScript agar dapat berfungsi penuh.</p>
+      </noscript>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 Panduan HTML Lengkap. Hak Cipta Dilindungi Undang-Undang.</p>
+    <p><a href="#">Kembali ke Atas ↑</a></p>
+  </footer>
+
+  <script>
+    const dialog = document.getElementById('myDialog');
+    document.getElementById('openModal').addEventListener('click', () => dialog.showModal());
+    document.getElementById('closeModal').addEventListener('click', () => dialog.close());
+
+    const canvas = document.getElementById('myCanvas');
+    if (canvas.getContext) {
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#28a745';
+      ctx.fillRect(10, 10, 80, 30);
+    }
+  </script>
+</body>
+
+</html>

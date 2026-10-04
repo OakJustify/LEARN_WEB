@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html>: Deklarasi standar versi HTML5 agar browser merender halaman dalam mode standar -->
+
+<!-- <html>: Elemen akar (root) tempat seluruh elemen HTML berada. Atribut 'lang' menentukan bahasa utama dokumen -->
+<html lang="id">
+
+<head>
+  <!-- <head>: Container untuk metadata (informasi tentang dokumen) yang tidak tampil langsung di layar -->
+
+  <!-- <meta charset="UTF-8">: Menentukan enkoding karakter internasional (UTF-8) agar simbol, abjad, & emoji tampil benar -->
+  <meta charset="UTF-8">
+
+  <!-- <meta name="viewport">: Mengatur area tampilan (viewport) agar tata letak halaman responsif di HP/tablet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <meta name="description">: Rangkuman singkat isi halaman untuk hasil pencarian Google (SEO) -->
+  <meta name="description" content="Kamus dan panduan lengkap tag-tag HTML5 beserta fungsinya.">
+
+  <!-- <meta name="theme-color">: Mengubah warna bilah navigasi/status bar browser mobile -->
+  <meta name="theme-color" content="#0b0d12">
+
+  <!-- <title>: Judul halaman yang muncul di tab browser dan hasil pencarian mesin pencari -->
+  <title>Panduan & Referensi Tag HTML5 Lengkap</title>
+
+  <!-- <link rel="icon">: Favicon (ikon kecil) yang muncul pada tab browser -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- <link rel="stylesheet">: Memanggil berkas CSS eksternal untuk penataan gaya visual -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <style>: Penulisan CSS internal langsung di dalam berkas HTML -->
+  <style>
+    /* CSS internal singkat hanya sebagai contoh penataan dasar */
+    body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 20px; }
+    code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+  </style>
+
+  <!-- <script>: Memanggil atau menulis skrip JavaScript di bagian head (menggunakan defer agar tidak memblokir render HTML) -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- <body>: Container utama tempat seluruh konten visual yang tampil di layar diletakkan -->
+
+  <!-- ========================================== -->
+  <!-- 1. STRUKTUR & LAYOUT SEMANTIK              -->
+  <!-- ========================================== -->
+
+  <!-- <header>: Bagian kepala halaman atau bagian atas dari suatu artikel (biasanya berisi logo, judul, navigasi) -->
+  <header>
+    <!-- <h1>: Judul tingkat utama (paling penting). Dalam 1 halaman idealnya hanya ada satu <h1> -->
+    <h1>Referensi Lengkap Elemen & Tag HTML5</h1>
+
+    <!-- <nav>: Blok navigasi utama yang berisi kumpulan tautan/link menu -->
+    <nav>
+      <!-- <ul>: Unordered List (daftar berpoin/bullet) -->
+      <ul>
+        <!-- <li>: List Item (anggota dari sebuah daftar) -->
+        <!-- <a>: Anchor tag (tautan/link ke halaman lain, file, atau seksi ber-ID) -->
+        <li><a href="#teks">Teks & Tipografi</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#formulir">Formulir</a></li>
+        <li><a href="#tabel">Tabel</a></li>
+        <li><a href="#interaktif">Interaktif</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- <hr>: Horizontal Rule (garis pemisah horizontal antar konten) -->
+  <hr>
+
+  <!-- <main>: Area konten utama dan unik dari halaman (tidak boleh memuat navigasi/footer berulang) -->
+  <main>
+
+    <!-- <section>: Bagian/seksi generik yang mengelompokkan konten berdasar tema tertentu -->
+    <section id="teks">
+      <!-- <h2>: Judul tingkat kedua (sub-bab) -->
+      <h2>1. Teks & Formatting Tipografi</h2>
+
+      <!-- <article>: Blok konten mandiri yang dapat berdiri sendiri (seperti postingan blog, berita, atau kartu) -->
+      <article>
+        <!-- <h3>: Judul tingkat ketiga -->
+        <h3>Pengformatan Kata & Paragraf</h3>
+
+        <!-- <p>: Paragraf teks -->
+        <p>
+          Ini adalah paragraf biasa. Di dalamnya kita bisa menambahkan kata dengan 
+          <!-- <strong>: Menebalkan teks dengan penekanan penting (semantic) -->
+          <strong>teks tebal (strong)</strong>, 
+          <!-- <em>: Miring dengan penekanan kata (emphasis) -->
+          <em>teks miring (em)</em>, 
+          <!-- <mark>: Menandai/menyoroti teks (highlight kuning bawaan) -->
+          <mark>teks tersorot (mark)</mark>, dan 
+          <!-- <small>: Mengecilkan ukuran teks (misal: catatan kaki, hak cipta) -->
+          <small>teks kecil (small)</small>.
+        </p>
+
+        <p>
+          <!-- <del>: Teks yang dihapus/dibatalkan (ditandai garis coret) -->
+          Harga lama: <del>Rp 100.000</del> 
+          <!-- <ins>: Teks yang disisipkan/baru ditambahkan (ditandai garis bawah) -->
+          <ins>Rp 75.000</ins>
+        </p>
+
+        <p>
+          Formula kimia: H<!-- <sub>: Subscript (teks di bawah baris dasar) --><sub>2</sub>O. 
+          Persamaan matematika: X<!-- <sup>: Superscript (teks pangkat di atas baris) --><sup>2</sup> + Y<sup>2</sup>.
+        </p>
+
+        <p>
+          <!-- <abbr>: Singkatan dengan penjelasan saat kursor diarahkan (hover) -->
+          Singkatan: <abbr title="HyperText Markup Language">HTML</abbr>
+        </p>
+
+        <p>
+          <!-- <time>: Menyajikan tanggal/waktu yang valid untuk dibaca oleh mesin/bot -->
+          Dipublikasikan pada: <time datetime="2026-10-04">4 Oktober 2026</time>
+        </p>
+      </article>
+
+      <article>
+        <h3>Kode, Kutipan, & Elemen Spesifik</h3>
+
+        <!-- <blockquote>: Kutipan panjang dari sumber lain (biasanya memiliki indentasi bawaan) -->
+        <blockquote cite="https://developer.mozilla.org">
+          <p>"HTML adalah bahasa pemformatan standar untuk dokumen yang dirancang agar ditampilkan di peramban web."</p>
+          <!-- <cite>: Menyebutkan nama karya, artikel, atau sumber yang dikutip -->
+          <cite>— MDN Web Docs</cite>
+        </blockquote>
+
+        <p>
+          <!-- <q>: Kutipan pendek berbentuk baris (otomatis menambahkan tanda petik) -->
+          Semboyan kita adalah <q>Belajar Setiap Hari</q>.
+        </p>
+
+        <p>
+          <!-- <code>: Menampilkan sebaris kode pemrograman (font monospace) -->
+          Gunakan perintah <code>console.log()</code> untuk debugging.
+        </p>
+
+        <!-- <pre>: Preformatted text (menjaga format spasi, tab, dan baris baru persis seperti yang diketik) -->
+        <pre><code>
+function sapa() {
+  console.log("Halo Dunia!");
+}
+        </code></pre>
+
+        <p>
+          Tekan tombol <!-- <kbd>: Mengidentifikasi masukan keyboard dari pengguna --> <kbd>Ctrl</kbd> + <kbd>C</kbd> untuk menyalin.
+        </p>
+
+        <p>
+          Output komputer: <!-- <samp>: Menampilkan sampel luaran program komputer --> <samp>File tidak ditemukan.</samp>
+        </p>
+
+        <p>
+          <!-- <var>: Menyatakan variabel matematika atau variabel pemrograman -->
+          Variabel <var>x</var> bernilai sama dengan <var>y</var> + 2.
+        </p>
+
+        <!-- <address>: Informasi kontak pemilik/penulis dokumen (email, alamat, telepon) -->
+        <address>
+          Dibuat oleh: <a href="mailto:admin@example.com">Tim Dev</a><br>
+          Kota Jember, Jawa Timur.
+        </address>
+      </article>
+
+      <article>
+        <h3>Daftar Deskripsi (Description List)</h3>
+        <!-- <dl>: Description List (daftar istilah beserta definisinya) -->
+        <dl>
+          <!-- <dt>: Description Term (nama istilah/kata kunci) -->
+          <dt>HTML</dt>
+          <!-- <dd>: Description Details (penjelasan/definisi dari istilah) -->
+          <dd>Bahasa pemformatan struktur halaman web.</dd>
+
+          <dt>CSS</dt>
+          <dd>Bahasa pemrograman untuk mengatur tampilan dan tata letak web.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <!-- <aside>: Konten sampingan/pelengkap yang terpisah dari alur utama (misal: sidebar, iklan, link terkait) -->
+    <aside>
+      <h4>Info Tambahan (Sidebar)</h4>
+      <p>Ini diletakkan di dalam tag <code>&lt;aside&gt;</code> untuk memberikan informasi pendukung.</p>
+    </aside>
+
+    <hr>
+
+    <!-- ========================================== -->
+    <!-- 2. MEDIA & EMBEDDED CONTENT               -->
+    <!-- ========================================== -->
+
+    <section id="media">
+      <h2>2. Media & Elemen Sematan</h2>
+
+      <!-- <figure>: Pengepak mandiri untuk media seperti gambar, diagram, atau kode yang dilengkapi keterangan -->
+      <figure>
+        <!-- <img>: Menampilkan gambar. Atribut 'src' (sumber file), 'alt' (teks alternatif jika gambar gagal dimuat) -->
+        <img src="https://via.placeholder.com/400x200" alt="Contoh gambar demonstrasi" width="400" height="200" loading="lazy">
+        <!-- <figcaption>: Judul atau keterangan (caption) untuk elemen <figure> -->
+        <figcaption>Gambar 1: Contoh implementasi tag figure dan figcaption.</figcaption>
+      </figure>
+
+      <!-- <picture>: Mengatur gambar adaptif berdasar kriteria media query (responsif gambar) -->
+      <picture>
+        <!-- <source>: Menentukan aset sumber gambar/video berdasarkan kondisi layar -->
+        <source media="(min-width: 800px)" srcset="https://via.placeholder.com/800x200">
+        <img src="https://via.placeholder.com/400x200" alt="Gambar responsif">
+      </picture>
+
+      <h4>Video & Audio</h4>
+      <!-- <video>: Memutar video langsung di browser. Atribut: controls, autoplay, loop, muted, playsinline -->
+      <video controls width="320" poster="https://via.placeholder.com/320x180" preload="metadata">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <!-- <track>: Menambahkan teks subtitle/caption untuk video atau audio -->
+        <track kind="subtitles" src="subtitles_id.vtt" srclang="id" label="Indonesia">
+        Browser Anda tidak mendukung pemutar video HTML5.
+      </video>
+
+      <!-- <audio>: Memutar berkas suara/musik di browser -->
+      <audio controls preload="none">
+        <source src="musik.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+      </audio>
+
+      <h4>Sematkan Halaman Eksternal</h4>
+      <!-- <iframe>: Menyematkan dokumen HTML / situs lain di dalam jendela halaman saat ini -->
+      <iframe src="https://example.com" title="Contoh Frame Eksternal" width="300" height="150" loading="lazy"></iframe>
+
+      <!-- <svg>: Menyimpan atau menggambar grafik vektor dua dimensi berbasis XML -->
+      <svg width="50" height="50">
+        <circle cx="25" cy="25" r="20" fill="#007bff" />
+      </svg>
+
+      <!-- <canvas>: Area bitmap kosong untuk menggambar grafik/game secara dinamis via JavaScript -->
+      <canvas id="myCanvas" width="100" height="50" style="border:1px solid #ccc;"></canvas>
+    </section>
+
+    <hr>
+
+    <!-- ========================================== -->
+    <!-- 3. TABEL DATA                              -->
+    <!-- ========================================== -->
+
+    <section id="tabel">
+      <h2>3. Struktur Tabel Data</h2>
+
+      <!-- <table>: Kontainer utama untuk tabel -->
+      <table border="1" style="border-collapse: collapse; width: 100%;">
+        <!-- <caption>: Judul/keterangan atas dari sebuah tabel -->
+        <caption>Daftar Nilai Mahasiswa</caption>
+
+        <!-- <colgroup>: Mengelompokkan satu atau beberapa kolom untuk diberi format visual secara bersamaan -->
+        <colgroup>
+          <!-- <col>: Menentukan atribut gaya pada kolom tertentu -->
+          <col style="background-color: #f9f9f9;">
+          <col span="2">
+        </colgroup>
+
+        <!-- <thead>: Bagian header tabel (baris judul kolom) -->
+        <thead>
+          <!-- <tr>: Table Row (baris pada tabel) -->
+          <tr>
+            <!-- <th>: Table Header Cell (sel judul, dicetak tebal & di tengah secara default) -->
+            <th>No</th>
+            <th>Nama</th>
+            <th>Mata Kuliah</th>
+            <th>Nilai</th>
+          </tr>
+        </thead>
+
+        <!-- <tbody>: Bagian badan utama dari baris data tabel -->
+        <tbody>
+          <tr>
+            <!-- <td>: Table Data Cell (sel berisi nilai data biasa) -->
+            <td>1</td>
+            <td>Rian</td>
+            <td>Pemrograman Web</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Siti</td>
+            <td>Pemrograman Web</td>
+            <td>A-</td>
+          </tr>
+        </tbody>
+
+        <!-- <tfoot>: Bagian kaki tabel (biasanya untuk total, rata-rata, atau ringkasan) -->
+        <tfoot>
+          <tr>
+            <!-- rowspan / colspan: Menggabungkan sel antar baris / antar kolom -->
+            <td colspan="3">Total Siswa Passed</td>
+            <td>2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- ========================================== -->
+    <!-- 4. FORMULIR & INPUT                        -->
+    <!-- ========================================== -->
+
+    <section id="formulir">
+      <h2>4. Formulir & Elemen Input</h2>
+
+      <!-- <form>: Area pengumpul data input pengguna untuk dikirimkan ke server via action & method -->
+      <form action="/submit-endpoint" method="POST">
+
+        <!-- <fieldset>: Mengelompokkan beberapa kontrol formulir yang saling berkaitan secara visual -->
+        <fieldset>
+          <!-- <legend>: Judul/label untuk menjelaskan kelompok <fieldset> -->
+          <legend>Informasi Akun</legend>
+
+          <div>
+            <!-- <label>: Label penjelasan untuk elemen input (dihubungkan via atribut 'for' ke 'id' input) -->
+            <label for="username">Nama Pengguna:</label>
+            <!-- <input>: Kontrol input utama (tipe text, required=wajib diisi, placeholder=teks bayangan) -->
+            <input type="text" id="username" name="username" placeholder="Masukkan username" required autocomplete="username">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com">
+          </div>
+
+          <div>
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" name="password">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Input Variasi Tipe HTML5</legend>
+
+          <div>
+            <label for="angka">Angka (Number):</label>
+            <input type="number" id="angka" name="angka" min="1" max="100" value="10">
+          </div>
+
+          <div>
+            <label for="rentang">Rentang (Range/Slider):</label>
+            <input type="range" id="rentang" name="rentang" min="0" max="100">
+          </div>
+
+          <div>
+            <label for="tanggal">Tanggal (Date):</label>
+            <input type="date" id="tanggal" name="tanggal">
+          </div>
+
+          <div>
+            <label for="warna">Pilih Warna (Color):</label>
+            <input type="color" id="warna" name="warna" value="#007bff">
+          </div>
+
+          <div>
+            <label for="berkas">Unggah File (File):</label>
+            <input type="file" id="berkas" name="berkas" accept="image/*">
+          </div>
+
+          <div>
+            <!-- Radio Button: Pilihan tunggal dari beberapa opsi (harus berbagi 'name' yang sama) -->
+            <p>Jenis Kelamin:</p>
+            <input type="radio" id="pria" name="jk" value="pria">
+            <label for="pria">Laki-Laki</label>
+
+            <input type="radio" id="wanita" name="jk" value="wanita">
+            <label for="wanita">Perempuan</label>
+          </div>
+
+          <div>
+            <!-- Checkbox: Pilihan centang independen (bisa pilih lebih dari satu) -->
+            <input type="checkbox" id="setuju" name="setuju" checked>
+            <label for="setuju">Saya menyetujui syarat & ketentuan</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pilihan & Input Teks Panjang</legend>
+
+          <div>
+            <label for="kota">Pilih Kota (Select Dropdown):</label>
+            <!-- <select>: Elemen menu opsi gantung (dropdown) -->
+            <select id="kota" name="kota">
+              <!-- <optgroup>: Mengelompokkan opsi-opsi terdekat ke dalam kategori -->
+              <optgroup label="Jawa Timur">
+                <!-- <option>: Opsi pilihan individual dalam <select> atau <datalist> -->
+                <option value="jember">Jember</option>
+                <option value="surabaya" selected>Surabaya</option>
+              </optgroup>
+              <optgroup label="Jawa Barat">
+                <option value="bandung">Bandung</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div>
+            <label for="browser">Pilih Browser (AutoComplete via Datalist):</label>
+            <input list="browsers" id="browser" name="browser" placeholder="Ketik browser...">
+            <!-- <datalist>: Memberikan rekomendasi kata kunci otomatis saat mengisi <input> -->
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Safari">
+              <option value="Edge">
+            </datalist>
+          </div>
+
+          <div>
+            <label for="pesan">Pesan/Komentar:</label><br>
+            <!-- <textarea>: Kotak input teks multibaris (dapat diperbesar ukurannya) -->
+            <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Ketik pesan Anda..."></textarea>
+          </div>
+
+          <div>
+            <label for="progres">Progres Penyelesaian:</label>
+            <!-- <progress>: Batang pengukur progres tugas/proses pengunduhan -->
+            <progress id="progres" value="70" max="100">70%</progress>
+          </div>
+
+          <div>
+            <label for="meteran">Pengukur Kapasitas (Meter):</label>
+            <!-- <meter>: Batang pengukur nilai skalar dalam rentang pasti (misal: penggunaan disk, memori) -->
+            <meter id="meteran" value="0.6" min="0" max="1.0">60%</meter>
+          </div>
+        </fieldset>
+
+        <br>
+        <!-- <button>: Tombol yang dapat diklik (type: submit, reset, atau button) -->
+        <button type="submit">Kirim Data</button>
+        <button type="reset">Riset Form</button>
+        <button type="button" onclick="alert('Tombol kustom!')">Tombol Biasa</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- ========================================== -->
+    <!-- 5. ELEMEN INTERAKTIF & MODERN              -->
+    <!-- ========================================== -->
+
+    <section id="interaktif">
+      <h2>5. Elemen Interaktif Modern</h2>
+
+      <!-- <details>: Widget lipat interaktif (accordion) yang bisa dibuka-tutup oleh pengguna -->
+      <details>
+        <!-- <summary>: Judul/heading yang selalu terlihat pada elemen <details> -->
+        <summary>Klik di sini untuk melihat FAQ / Rahasia</summary>
+        <p>Ini adalah konten tersembunyi yang muncul saat elemen dibuka.</p>
+      </details>
+
+      <br>
+
+      <!-- <dialog>: Jendela pop-up / modal interaktif bawaan dari HTML5 -->
+      <dialog id="myDialog">
+        <p>Ini adalah jendela dialog modal bawaan HTML!</p>
+        <button id="closeModal">Tutup Dialog</button>
+      </dialog>
+
+      <button id="openModal">Buka Pop-up Dialog</button>
+
+      <!-- <template>: Cetak biru struktur HTML yang tidak dirender saat halaman dimuat, digunakan oleh JS untuk kloning elemen -->
+      <template id="card-template">
+        <div class="card">
+          <h4>Judul Kartu</h4>
+          <p>Deskripsi dinamis dari skrip JavaScript.</p>
+        </div>
+      </template>
+
+      <!-- <noscript>: Konten cadangan yang HANYA tampil jika browser pengguna mematikan dukungan JavaScript -->
+      <noscript>
+        <p style="color: red;">Peringatan: Situs ini membutuhkan JavaScript agar dapat berfungsi penuh.</p>
+      </noscript>
+    </section>
+
+  </main>
+
+  <!-- <hr>: Garis pembatas sebelum kaki halaman -->
+  <hr>
+
+  <!-- <footer>: Bagian kaki halaman (berisi informasi hak cipta, navigasi sekunder, atau kebijakan privasi) -->
+  <footer>
+    <p>&copy; 2026 Panduan HTML Lengkap. Hak Cipta Dilindungi Undang-Undang.</p>
+    <p><a href="#">Kembali ke Atas ↑</a></p>
+  </footer>
+
+  <!-- JS Sederhana untuk Menguji Modal Dialog & Canvas -->
+  <script>
+    // Contoh JS singkat untuk interaksi tag <dialog> dan <canvas>
+    const dialog = document.getElementById('myDialog');
+    document.getElementById('openModal').addEventListener('click', () => dialog.showModal());
+    document.getElementById('closeModal').addEventListener('click', () => dialog.close());
+
+    // Gambar lingkaran sederhana di tag <canvas>
+    const canvas = document.getElementById('myCanvas');
+    if (canvas.getContext) {
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#28a745';
+      ctx.fillRect(10, 10, 80, 30);
+    }
+  </script>
+</body>
+
+</html>

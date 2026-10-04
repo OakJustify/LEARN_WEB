@@ -53,10 +53,8 @@ A responsive, modular Single Page Application (SPA) fan page built using pure HT
 
 ## 🎯 Next Steps & Future Goals
 
-- [ ] Deep dive into asynchronous JavaScript (`async/await` & API integration).
-- [ ] Practice building complex CSS animations and micro-interactions.
-- [ ] Explore local storage and state management in Vanilla JS.
-- [ ] Build multi-page UI layouts from scratch without AI assistance.
+- [ ] Learning Bootstrap
+- [ ] Learning Tailwindcss and Node js (npm)
 
 ---
 
